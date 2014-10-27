@@ -3,8 +3,8 @@
 	<head>
 		<title>reveal.js - The HTML Presentation Framework</title>
 		<meta charset="utf-8">
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Présentation de stage CIR2 Rémi Collignon">
+		<meta name="author" content="COLLIGNON Rémi">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -30,25 +30,80 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+<!-- INTRO -->
 				<section>
 					<section>
-						<h1>Présentation de stage</h1>
-						<h3>chez Vignal Systems</h3>
-						<aside class="notes">
-						    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-						</aside>
+						<h1>STAGE CIR2</h1>
+						<h3>Vignal Systems</h3>
+						<p><small>Du 16/06/14 au 01/08/14</small></p>
+						<img src="vignal.jpg" id="logoV">
+						<img src="isen.jpg" id="logoI">
 						<p>
 							<small>Par <a href="http://remi.rcdinfo.fr">Rémi Collignon</a></small>
 						</p>
 					</section>
-					<section></section>
-					<section></section>
-					<section></section>
+					<section>
+						<h2>Plan de la présentation</h2>
+						<ol>
+							<li class="fragment highlight-red visible">Présentation de l'entreprise</li>
+							<li class="fragment shrink visible current-fragment">Le langage de developpement</li>
+							<li class="fragment shrink visible current-fragment">Mon projet</li>
+							<li class="fragment shrink visible current-fragment">Bilan technique</li>
+							<li class="fragment shrink visible current-fragment">Contexte humain et social</li>
+						</ol>
+					</section>
 				</section>
 				<section>
-					
+					<section>
+						<h3>Qu'es ce que Vignal SYSTEMS ?</h3>
+						<p class="fragment highlight-blue">Vignal est une société née en 1918 grâce à Léon Vignal, sous le nom de Vignal SA, sa principale activité est l’outillage électrique ainsi que les pièces pour cycles. En 1960 la société s’oriente dans la concéption de feux arrière de poids lourd.</p>
+					</section>
+					<section>
+						<h3>L'informatique au coeur de la société</h3>
+						<ul>
+							<li>2 Personnes: responsable reseaux, responsable logiciel</li>
+							<li>300 PC: poste fixes utiliser tout les jours et automates de production</li>
+							<li>30 Machines virtuelles</li>
+						</ul>
+					</section>
+				</section>
+				<section>{{menu}}</section>
+				<section>
+					<section>
+						<h3>Le L4G SilverCS - Progress</h3>
+						<blockquote>L4G: Type de logiciel qui comporte un langage de programmation combiné avec un système de gestion de base de données.
+						</blockquote>
+					</section>
+					<section>
+						<p>Ex: requête que la base de donnée</p>	
+						<pre>
+							<code>
+								FIND FIRST employe WHERE employe.age >20 .
+								DISP employe.nom .
+							</code>
+							<code>
+								DEFINE VARIABLE nom AS CHARACTER.
+								nom = "Dupont".
+								FIND FIRST employe WHERE employe.nom = nom .
+								IF AVAILABLE employe:
+									DISP employe.prenom .
+							</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					{{menu}}	
+				</section>
+				<section>
+					<section>
+						<h3>L'étalonnage des outils avant</h3>
+						<img src="app-old.jpg"/>
+					</section>
+					<section>
+						<h3>L'étalonnage des outils après</h3>
+						<img style="height:600px;" src="app-new.jpg"/>
+					</section>	
 				</section>
 			</div>
 		</div>
@@ -76,6 +131,14 @@
 				parallaxBackgroundImage: 'industrie.jpg',
 				parallaxBackgroundSize: '2508px 1672px',
 
+				/*leap: {
+				        naturalSwipe   : true,    // Invert swipe gestures
+				        pointerOpacity : 0.5,      // Set pointer opacity to 0.5
+				        gestureDelay   : 200,
+				        pointerColor   : '#d80000' // Red pointer
+				},*/
+
+
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -85,7 +148,9 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'socket.io/socket.io.js', async: true},
-					{ src: 'plugin/notes-server/client.js', async: true}
+					{ src: 'plugin/notes-server/client.js', async: true},
+					{ src: 'plugin/leap/leap.js', async: true }
+
 				]
 			});
 		</script>

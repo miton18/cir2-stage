@@ -42,7 +42,9 @@ body {
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
+  font-size: 3.5em;
+}
 
 /*********************************************
  * LINKS
@@ -68,10 +70,12 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
- .reveal section
+.present
  {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+  /*box-shadow: 0px 0px 27px 10px #000000;*/
  }
+
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
@@ -140,7 +144,24 @@ body {
 {
   color: #e7ad52;
   font-size: 1.5em; 
-  text-shadow: 1px 1px 1px #e7ad52;
+  text-shadow: 1px 1px 1px #e7ad52,
+  text-shadow: 0px 0px 22px black;
+  padding: 5px;
   background-color: black;
-  box-shadow: -13px 0px 14px 8px black, 13px 0px 14px 8px black;
+  box-shadow: 0px 0px 3px 3px black;
+  border-radius: 5%;
+}
+
+
+
+
+.reveal .slides>section>section.present
+{
+  box-shadow: 0px 0px 27px 10px #000000;
+}
+#logoI, #logoV
+{
+  display: inline;
+  width: 48%;
+  height:180px;
 }
