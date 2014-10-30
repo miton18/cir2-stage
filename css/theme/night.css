@@ -154,7 +154,14 @@ body {
 
 
 
-
+*
+{
+  line-height: 130% !important; 
+}
+ol li
+{
+  font-size: 130% !important;
+}
 .reveal .slides>section>section.present
 {
   box-shadow: 0px 0px 27px 10px #000000;

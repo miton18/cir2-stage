@@ -37,8 +37,8 @@
 						<h1>STAGE CIR2</h1>
 						<h3>Vignal Systems</h3>
 						<p><small>Du 16/06/14 au 01/08/14</small></p>
-						<img src="vignal.jpg" id="logoV">
-						<img src="isen.jpg" id="logoI">
+						<img src="image/vignal.jpg" id="logoV">
+						<img src="image/isen.jpg" id="logoI">
 						<p>
 							<small>Par <a href="http://remi.rcdinfo.fr">Rémi Collignon</a></small>
 						</p>
@@ -105,7 +105,7 @@
 							</code>
 						</pre>
 						<p class="fragment" >Qui viens de décrocher?
-							<img style="display: block;height: 200px;" src="lapin.gif" alt="">
+							<img style="display: block;height: 200px;" src="image/lapin.gif" alt="">
 						</p>
 					</section>
 				</section>
@@ -125,22 +125,22 @@
 				<section>
 					<section>
 						<h3>L'étalonnage des outils avant</h3>
-						<img src="app-old.jpg"/>
+						<img src="image/app-old.jpg"/>
 					</section>
 					<section>
 						<h3>L'étalonnage des outils après</h3>
-						<img style="height:600px;" src="app-new.jpg"/>
-						<img class="fragment" style="position: fixed;" src="medal.gif" alt="">
+						<img style="height:600px;" src="image/app-new.jpg"/>
+						<img class="fragment" style="padding-bottom:300px; margin-top: -700px;" src="image/medal.gif">
 					</section>	
 					<section>
 						<h4>Les rapports d'étalonnages</h4>	
-						<img src="rap1.jpg">
+						<img src="image/rap1.jpg">
 					</section>
 					<section>
 						<h3>Mise en production</h3>
 						<p>Erreur de conception dans la base de donnée</p>
 						<p>Fonctionnalitées que je n'aurai pas du codées</p>	
-						<img class="fragment" src="prod1.gif">
+						<img class="fragment" src="image/prod1.gif">
 					</section>
 				</section>
 				<section>
@@ -161,7 +161,7 @@
 						<h3>Bilan technique</h3>
 						<ol>
 							<li>Apprentissage d'un bouveau langage</li>
-							<li>Decouverte du developpement dans une entreprise</li>
+							<li>Decouverte du developpement dans<br> une entreprise</li>
 							<li>Adaptation à la demande des utilisateurs</li>
 							<li>Une expérience très enrichissante avec <br>2 professionnels de l'informatique</li>
 						</ol>	
@@ -183,6 +183,12 @@
 				<section>
 					<section>
 						<h3>Contexte humain et social</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Fin</h3>
+						<h5>Des questions?</h5>
 					</section>
 				</section>
 			</div>
@@ -208,8 +214,8 @@
 				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				parallaxBackgroundImage: 'industrie.jpg',
-				parallaxBackgroundSize: '2508px 1672px',
+				parallaxBackgroundImage: 'image/industrie.jpg',
+				parallaxBackgroundSize: '4508px 1672px',
 
 				/*leap: {
 				        naturalSwipe   : true,    // Invert swipe gestures
@@ -227,9 +233,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'socket.io/socket.io.js', async: true},
-					{ src: 'plugin/notes-server/client.js', async: true},
-					{ src: 'plugin/leap/leap.js', async: true }
+					{ src: 'plugin/notes-server/client.js', async: true}
 
 				]
 			});
