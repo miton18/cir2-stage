@@ -1,1 +1,1 @@
-console.log('on ecrit quelque chose');
+ console.log('on ecrit quelque chose');
